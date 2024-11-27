@@ -39,3 +39,7 @@ set nat destination rule 200 translation port 22 #Porta da VM
 Cada regra tem que ter seu número ex:
 >              set nat destination rule 200 description "Redirecionar porta 30050 para 22"
 >              set nat destination rule 201 description "Redirecionar porta 80 para 80"
+##Desativar ping 
+```bash
+set firewall global-options all-ping disable
+```
