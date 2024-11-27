@@ -36,7 +36,7 @@ set nat destination rule 200 source address 201.222.31.205/32  #Regra opcional, 
 set nat destination rule 200 translation address 192.168.0.5  #IP da VM de destino
 set nat destination rule 200 translation port 22 #Porta da VM
 ```
-Cada regra tem que ter seu número ex:
+⚠️ Cada regra tem que ter seu número ex:
 >              set nat destination rule 200 description "Redirecionar porta 30050 para 22"
 >              set nat destination rule 201 description "Redirecionar porta 80 para 80"
 ##Desativar ping 
