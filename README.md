@@ -15,3 +15,8 @@ set system name-server 1.1.1.1
 set system name-server 8.8.8.8
 edit protocols static route 0.0.0.0/0 next-hop x.x.x.x # Seria o gateway, que normalmente é informado pelo provedor de serviços de internet, sendo o mesmo responsável por fornecer o endereço IP.
 ```
+## Configurar eth1 Rede LAN
+```bash
+set interfaces ethernet eth1 address 192.168.0.1/24
+set interfaces ethernet eth1 description LAN
+```
