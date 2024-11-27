@@ -32,7 +32,7 @@ set nat destination rule 200 description "Redirecionar porta 30050 para 22"
 set nat destination rule 200 destination port 30050
 set nat destination rule 200 inbound-interface name eth0
 set nat destination rule 200 protocol tcp
-set nat destination rule 200 source address 201.222.31.205/32  #Regra opcional, só este ip externo que vai ter acesso a esta porta.
+set nat destination rule 200 source address x.x.x.x/32  #Regra opcional, só este ip externo que vai ter acesso a esta porta.
 set nat destination rule 200 translation address 192.168.0.5  #IP da VM de destino
 set nat destination rule 200 translation port 22 #Porta da VM
 ```
